@@ -16,15 +16,15 @@ This list is arranged along the main learning thread, covering the complete evol
 >CNN → Transformer → LLM → Diffusion → Multimodal → Agent → Physical AI
 
 ## 📖Overview
-- [🏗️ 深度学习基础 (Deep Learning Backbone)](#深度学习基础 (Deep Learning Backbone))
-- [🧠 大语言模型 (Large Language Models - LLM)](#大语言模型 (Large Language Models - LLM))
-- [🎨 生成式 AI (Generative AI - AIGC)](#生成式 AI (Generative AI - AIGC))
-- [🔗 多模态 AI (Multimodal AI)](#多模态 AI (Multimodal AI))
-- [🤖 AI 智能体 (AI Agent)](#AI 智能体 (AI Agent))
-- [🦾 具身智能 (Physical AI)](#具身智能 (Physical AI))
-- 
+- [🏗️ 深度学习基础 (Deep Learning Backbone)](#DLB-id)
+- [🧠 大语言模型 (Large Language Models - LLM)](#大语言模型(large-language-models-llm))
+- [🎨 生成式 AI (Generative AI - AIGC)](#generative-AI-AIGC)
+- [🔗 多模态 AI (Multimodal AI)](#-multimodal-ai)
+- [🤖 AI 智能体 (AI Agent)](#AI-智能体-(AI-Agent))
+- [🦾 具身智能 (Physical AI)](#具身智能-(physical-AI))
 
-### 1. 🏗️ 深度学习基础 (Deep Learning Backbone)
+
+### 1. 🏗️ 深度学习基础 (Deep Learning Backbone){#DLB-id}
 这些论文奠定了现代深度学习、序列建模和计算机视觉的基础。
 
 | # | 论文名称 | 年份 | 核心贡献 |
