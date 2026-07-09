@@ -81,4 +81,3 @@ Agent 时代的重要起点。
 | 20 | **RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control** | 2023 | Vision-Language-Action (VLA) 代表作 |
 
 
-加油，把这个仓库搭起来，师兄肯定对你刮目相看！如果有其他需要调整的，随时叫我。
