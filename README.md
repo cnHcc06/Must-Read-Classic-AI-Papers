@@ -20,7 +20,7 @@ This list is arranged along the main learning thread, covering the complete evol
 - [🧠 大语言模型 (Large Language Models - LLM)](#LLM)
 - [🎨 生成式 AI (Generative AI - AIGC)](#AIGC)
 - [🔗 多模态 AI (Multimodal AI)](#Multimodel)
-- [🤖 AI 智能体 (AI Agent)](#Agent)
+- [🤖 AI 智能体 (AI Agent)](#ai-agent)
 - [🦾 具身智能 (Physical AI)](#physical-AI)
 
 
@@ -65,7 +65,7 @@ This list is arranged along the main learning thread, covering the complete evol
 | 16 | **BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models** | 2023 | Q-Former 架构经典 |
 | 17 | **Visual Instruction Tuning (LLaVA)** | 2023 | 开源 Vision-Language Model 代表 |
 
-### 5. 🤖 AI 智能体 (AI Agent){#Agent}
+### 5. 🤖 AI Agent
 Agent 时代的重要起点。
 
 | # | 论文名称 | 年份 | 核心贡献 |
