@@ -24,7 +24,7 @@ This list is arranged along the main learning thread, covering the complete evol
 - [🦾 具身智能 (Physical AI)](#physical-id)
 
 
-## 1. 🏗️ 深度学习基础 (Deep Learning Backbone){#Backbone-id}
+## 1. 🏗️ 深度学习基础 (Deep Learning Backbone) {#Backbone-id}
 这些论文奠定了现代深度学习、序列建模和计算机视觉的基础。
 
 | # | 论文名称 | 年份 | 核心贡献 |
@@ -35,7 +35,7 @@ This list is arranged along the main learning thread, covering the complete evol
 | 4 | [**Deep Residual Learning for Image Recognition (ResNet)**](https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html) | 2015 | Residual Connection, 现代CV基石 |
 | 5 | [**Attention Is All You Need**](https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html) | 2017 | Transformer 诞生，现代 AI 最重要论文之一 |
 
-## 2. 🧠 大语言模型 (Large Language Models - LLM){#LLM}
+## 2. 🧠 大语言模型 (Large Language Models - LLM) {#LLM}
 开启预训练、大语言模型与推理时代。
 
 | # | 论文名称 | 年份 | 核心贡献 |
@@ -46,7 +46,7 @@ This list is arranged along the main learning thread, covering the complete evol
 | 9 | **Training Language Models to Follow Instructions with Human Feedback (InstructGPT)** | 2022 | RLHF，让 LLM 真正可用 |
 | 10 | **Chain-of-Thought Prompting Elicits Reasoning in Large Language Models** | 2022 | CoT 推理能力，引爆 Reasoning 研究 |
 
-## 3. 🎨 生成式 AI (Generative AI - AIGC){#AIGC}
+## 3. 🎨 生成式 AI (Generative AI - AIGC) {#AIGC}
 现代生成模型的发展路线。
 
 | # | 论文名称 | 年份 | 核心贡献 |
@@ -55,7 +55,7 @@ This list is arranged along the main learning thread, covering the complete evol
 | 12 | **Denoising Diffusion Probabilistic Models (DDPM)** | 2020 | Diffusion 模型奠基论文 |
 | 13 | **High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)** | 2022 | Latent Diffusion，大规模开源文生图基础 |
 
-## 4. 🔗 多模态 AI (Multimodal AI){#Multimodel}
+## 4. 🔗 多模态 AI (Multimodal AI) {#Multimodel}
 视觉、语言、多模态融合的发展。
 
 | # | 论文名称 | 年份 | 核心贡献 |
@@ -73,7 +73,7 @@ Agent 时代的重要起点。
 | 18 | **ReAct: Synergizing Reasoning and Acting in Language Models** | 2022 | Reasoning + Tool Use，Agent 开山之作 |
 | 19 | **Toolformer: Language Models Can Teach Themselves to Use Tools** | 2023 | Tool Calling 思想来源 |
 
-## 6. 🦾 具身智能 (Physical AI){#physical-id}
+## 6. 🦾 具身智能 (Physical AI) {#physical-id}
 机器人与具身智能。
 
 | # | 论文名称 | 年份 | 核心贡献 |
