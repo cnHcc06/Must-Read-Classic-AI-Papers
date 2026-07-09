@@ -20,8 +20,8 @@ This list is arranged along the main learning thread, covering the complete evol
 - [🧠 大语言模型 (Large Language Models - LLM)](#LLM)
 - [🎨 生成式 AI (Generative AI - AIGC)](#AIGC)
 - [🔗 多模态 AI (Multimodal AI)](#Multimodel)
-- [🤖 AI 智能体 (AI Agent)](#ai-agent)
-- [🦾 具身智能 (Physical AI)](#physical-AI)
+- [🤖 AI 智能体 (AI Agent)](#-ai-agent)
+- [🦾 具身智能 (Physical AI)](#physical-id)
 
 
 ### 1. 🏗️ 深度学习基础 (Deep Learning Backbone){#Backbone-id}
@@ -73,7 +73,7 @@ Agent 时代的重要起点。
 | 18 | **ReAct: Synergizing Reasoning and Acting in Language Models** | 2022 | Reasoning + Tool Use，Agent 开山之作 |
 | 19 | **Toolformer: Language Models Can Teach Themselves to Use Tools** | 2023 | Tool Calling 思想来源 |
 
-### 6. 🦾 具身智能 (Physical AI){#physical-AI}
+### 6. 🦾 具身智能 (Physical AI){#physical-id}
 机器人与具身智能。
 
 | # | 论文名称 | 年份 | 核心贡献 |
