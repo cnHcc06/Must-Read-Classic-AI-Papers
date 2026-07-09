@@ -29,11 +29,11 @@ This list is arranged along the main learning thread, covering the complete evol
 
 | # | 论文名称 | 年份 | 核心贡献 |
 | :--- | :--- | :--- | :--- |
-| 1 | **Long Short-Term Memory (LSTM)** | 1997 | 解决 RNN 长期依赖问题 |
-| 2 | **ImageNet Classification with Deep Convolutional Neural Networks (AlexNet)** | 2012 | 深度学习复兴，CNN 时代开始 |
-| 3 | **Very Deep Convolutional Networks for Large-Scale Image Recognition (VGG)** | 2014 | 深层 CNN 设计思想 |
-| 4 | **Deep Residual Learning for Image Recognition (ResNet)** | 2015 | Residual Connection，现代 CV 基石 |
-| 5 | **Attention Is All You Need** | 2017 | Transformer 诞生，现代 AI 最重要论文之一 |
+| 1 | [**Long Short-Term Memory (LSTM)**](https://ieeexplore.ieee.org/abstract/document/6795963) | 1997 | 解决 RNN 长期依赖问题 |
+| 2 | [**ImageNet Classification with Deep Convolutional Neural Networks (AlexNet)**](https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html) | 2012 | 深度学习复兴，CNN 时代开始 |
+| 3 | [**Very Deep Convolutional Networks for Large-Scale Image Recognition (VGG)**](https://arxiv.org/abs/1409.1556) | 2014 | 深层 CNN 设计思想 |
+| 4 | [**Deep Residual Learning for Image Recognition (ResNet)**](https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html) | 2015 | Residual Connection，现代 CV 基石 |
+| 5 | [**Attention Is All You Need**](https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html) | 2017 | Transformer 诞生，现代 AI 最重要论文之一 |
 
 ### 2. 🧠 大语言模型 (Large Language Models - LLM){#LLM}
 开启预训练、大语言模型与推理时代。
