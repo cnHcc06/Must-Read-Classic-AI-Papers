@@ -1,5 +1,8 @@
 <h1 align="center">初学 Attention 最困惑的问题</h1>
 
+<p align="center"> 解答者：deepseek v4 flash </p>
+
+
 <h2 align="center">引子：什么是Attention?</h2>
 
 论文第 3.2 节开头给出的定义非常精准：
