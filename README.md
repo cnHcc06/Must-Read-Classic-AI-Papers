@@ -37,7 +37,7 @@ This list is arranged along the main learning thread, covering the complete evol
 | 2 | [**ImageNet Classification with Deep Convolutional Neural Networks (AlexNet)**](https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html) | 2012 | 深度学习复兴 |
 | 3 | [**Very Deep Convolutional Networks for Large-Scale Image Recognition (VGG)**](https://arxiv.org/abs/1409.1556) | 2014 | 深层 CNN 设计思想 |
 | 4 | [**Deep Residual Learning for Image Recognition (ResNet)**](https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html) <br><details><summary>Extend Reading</summary> [CNN技术迭代史](https://github.com/cnHcc06/Must-Read-Classic-AI-Papers/blob/main/CNN%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B.md)</details> | 2015 | Residual Connection, 现代CV基石 |
-| 5 | [**Attention Is All You Need**](https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html) <br><details><summary>Extend Reading</summary> [审稿人意见](https://papers.nips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Reviews.html)</details> | 2017 | Transformer 诞生，现代 AI 最重要论文之一 |
+| 5 | [**Attention Is All You Need**](https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html) <br><details><summary>Extend Reading</summary> [初学attention最困惑的问题 <br> [审稿人意见](https://papers.nips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Reviews.html)</details> | 2017 | Transformer 诞生，现代 AI 最重要论文之一 |
 
 <a id="LLM"></a>
 
