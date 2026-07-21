@@ -48,7 +48,7 @@ This list is arranged along the main learning thread, covering the complete evol
 | # | 论文名称 | 年份 | 核心贡献 |
 | :--- | :--- | :--- | :--- |
 | 6 | [**BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding**](https://aclanthology.org/N19-1423/) <br><details><summary>Extend Reading</summary> <ol><li>[预训练-微调鸿沟](https://github.com/cnHcc06/Must-Read-Classic-AI-Papers/blob/main/%E9%A2%84%E8%AE%AD%E7%BB%83-%E5%BE%AE%E8%B0%83%E9%B8%BF%E6%B2%9F.md)</li>  </ol> </details> | 2018 | Encoder 预训练模型代表 |
-| 7 | **Language Models are Few-Shot Learners (GPT-3)** | 2020 | Few-shot Learning，大模型 Scaling 时代 |
+| 7 | [**Language Models are Few-Shot Learners (GPT-3)**](https://proceedings.neurips.cc/paper_files/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html?utm_source=transaction&utm_medium=email&utm_campaign=linkedin_newsletter) <br><details><summary>Extend Reading</summary> <ol><li> wait for adding </li>  </ol> </details> | 2020 | Few-shot Learning，大模型 Scaling 时代 |
 | 8 | **Scaling Laws for Neural Language Models** | 2020 | 提出 Scaling Law，指导大模型训练 |
 | 9 | **Training Language Models to Follow Instructions with Human Feedback (InstructGPT)** | 2022 | RLHF，让 LLM 真正可用 |
 | 10 | **Chain-of-Thought Prompting Elicits Reasoning in Large Language Models** | 2022 | CoT 推理能力，引爆 Reasoning 研究 |
