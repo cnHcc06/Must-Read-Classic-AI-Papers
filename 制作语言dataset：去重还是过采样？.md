@@ -1,4 +1,4 @@
-<h1 align="center"> 为什么GPT-3要大刀阔斧地去重 <br> 而CNN通常要生成相似图片进行数据增强？</h1>
+<h1 align="center"> 为什么GPT-3要大刀阔斧地去重 <br> 而CNN却要生成相似图片进行数据增强？</h1>
 
 <p align="center"> deepseek v4 flash 生成解答，请谨慎鉴别 </p>
 
