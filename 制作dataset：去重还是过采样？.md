@@ -1,5 +1,7 @@
 <h1 align="center"> 为什么GPT-3要大刀阔斧地去重 <br> 而CNN通常要生成相似图片进行数据增强？</h1>
 
+<p align="center"> deepseek v4 flash 生成解答，请谨慎鉴别 </p>
+
 按照本仓库 Learning Thread 学下来的朋友们都知道：CNN在训练时，data augmentation 是不可或缺的一步，研究者通常把一张图翻来覆去，调整光照，到处裁剪进行保标签变换。
 但训练语言模型时，GPT-3却根据与高质量参考语料库的相似性来过滤（筛选）CommonCrawl数据
 
