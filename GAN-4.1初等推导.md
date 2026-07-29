@@ -113,6 +113,8 @@ $$U(p_g, D) = \mathbb{E}_{x \sim p_{data}}[\log D(x)] + \mathbb{E}_{x \sim p_g}[
 
 **直觉理解：** 想象你有很多条凸曲线 $f_\alpha(x)$，你取它们在每个点的最大值形成一条新的曲线 $f(x)$。在某个点 $x$ 处，如果 $f_\beta$ 是"最高的那条曲线"，那么 $f$ 在这个点的"斜率"就包含了 $f_\beta$ 的斜率。
 
+<div align="center"><img src="https://github.com/cnHcc06/Must-Read-Classic-AI-Papers/blob/main/GAN%E8%AE%BA%E6%96%87%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC%E9%85%8D%E5%9B%BE.png" width=570 height=495></div>div>
+
 ---
 
 ### 第三步：将这个定理应用到 GAN 中
@@ -138,9 +140,9 @@ $$U(p_g, D) = \mathbb{E}_{x \sim p_{data}}[\log D(x)] + \mathbb{E}_{x \sim p_g}[
 
 ### 第四步：结合第一步得出结论
 
-第一步中提到：$U(p_g, D)$ 对于 $p_g$ 是凸的  
+第一步中提到： $U(p_g, D)$ 对于 $p_g$ 是凸的  
 由于 **一族凸函数的上确界仍是凸函数** ，因此
-> - $C(G) = \sup_D U(p_g, D)$ 也是关于 $p_g$ 是**凸函数**
+> - $C(G) = \sup_D U(p_g, D)$ 也是关于 $p_g$ 的**凸函数**
 
 
 > - 它有**唯一的全局最小值**，在 $p_g = p_{data}$ 处取得（此时 $C(G) = -\log 4$）
