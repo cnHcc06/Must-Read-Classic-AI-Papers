@@ -62,7 +62,7 @@ This list is arranged along the main learning thread, covering the complete evol
 | # | 论文名称 | 年份 | 核心贡献 |
 | :--- | :--- | :--- | :--- |
 | 11 | [**Generative Adversarial Nets (GAN)**](https://arxiv.org/pdf/1406.02661) <br><details><summary>Extend Reading</summary> [Section 4 初等推导解说](https://github.com/cnHcc06/Must-Read-Classic-AI-Papers/blob/main/GAN-4.1%E5%88%9D%E7%AD%89%E6%8E%A8%E5%AF%BC.md) | 2014 | GAN 开创生成模型新时代 |
-| 12 | **Denoising Diffusion Probabilistic Models (DDPM)** | 2020 | Diffusion 模型奠基论文 |
+| 12 | [**Denoising Diffusion Probabilistic Models (DDPM)**](https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html) <br><details><summary>Extend Reading</summary> [[视频]这些公式是什么意思？《DDPM》论文科普](https://www.bilibili.com/video/BV1fS7nznEUf/?spm_id_from=333.337.search-card.all.click&vd_source=fc3d9baef95f4f9022b0c3a1dc357933)  | 2020 | Diffusion 模型奠基论文 |
 | 13 | **High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)** | 2022 | Latent Diffusion，大规模开源文生图基础 |
 
 <a id="Multimodel"></a>
