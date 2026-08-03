@@ -73,7 +73,7 @@ This list is arranged along the main learning thread, covering the complete evol
 
 | # | 论文名称 | 年份 | 核心贡献 |
 | :--- | :--- | :--- | :--- |
-| 14 | **Learning Transferable Visual Models From Natural Language Supervision (CLIP)** | 2021 | Vision-Language 对齐基础 |
+| 14 | [**Learning Transferable Visual Models From Natural Language Supervision (CLIP)**](https://proceedings.mlr.press/v139/radford21a) | 2021 | Vision-Language 对齐基础 |
 | 15 | **Flamingo: a Visual Language Model for Few-Shot Learning** | 2022 | Few-shot 多模态模型代表 |
 | 16 | **BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models** | 2023 | Q-Former 架构经典 |
 | 17 | **Visual Instruction Tuning (LLaVA)** | 2023 | 开源 Vision-Language Model 代表 |
