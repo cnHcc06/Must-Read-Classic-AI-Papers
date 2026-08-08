@@ -45,7 +45,7 @@ self-attention layers (4.3开头)
 
 所以即便从"信息提取效率"的角度上合理——文本条件化的视觉提取理论上更精准，但自回归生成的循环依赖导致**训练计算量过大**，所以训练只能暂时错位。
 
-值得一提的是,BLIP团队的后续工作 **InstructBLIP** 就把所有推理任务文本提示都变为两次输入，这究竟是复盘反思的结果，还是传说中的模块化研究？
+值得一提的是, BLIP团队的后续工作 **InstructBLIP** 就把所有推理任务文本提示都变为两次输入。这究竟是复盘反思的结果，还是传说中的模块化研究？
 
 <div align="center">
   <img src="https://github.com/cnHcc06/Must-Read-Classic-AI-Papers/blob/main/LLM%E8%83%BD%E5%90%A6%E8%A7%A3%E5%86%BB%E6%8F%92%E5%9B%BE/BLIP-2%E6%8F%92%E5%9B%BE3.jpg" alt="毕导图（差异化）" width="400" load="lazy">
