@@ -6,19 +6,22 @@
 
 BLIP-2论文里有一些惑操作，例如Figure 2中 self-attention 看起来是分开的，实际是连在一起的。
 
-<img src="https://github.com/cnHcc06/Must-Read-Classic-AI-Papers/blob/main/LLM%E8%83%BD%E5%90%A6%E8%A7%A3%E5%86%BB%E6%8F%92%E5%9B%BE/BLIP-2%E9%97%AE%E9%A2%98%E6%8F%92%E5%9B%BE%E5%AF%B9%E6%AF%94.png" alt="第一阶段图" width="700" load="lazy">
+<div align="center">
+  <img src="https://github.com/cnHcc06/Must-Read-Classic-AI-Papers/blob/main/LLM%E8%83%BD%E5%90%A6%E8%A7%A3%E5%86%BB%E6%8F%92%E5%9B%BE/BLIP-2%E9%97%AE%E9%A2%98%E6%8F%92%E5%9B%BE%E5%AF%B9%E6%AF%94.png" alt="第一阶段图" width="700" load="lazy">
+</div>
 
 ### Q-Former 突然不给文本了？
 
 在训练架构上，为了支撑Q-Former **轻量化、浅注入的特性**，BLIP-2必须添加第一阶段VL-Representation Learning 来补偿。  
 
-但别扭的地方来了，到了第二阶段训练时Generative Learning，BLIP就不在Q-Former端输入文本了，而是直接从LLM的底部送入。
+但别扭的地方来了，到了第二阶段 Generative Learning 训练时，BLIP就不在Q-Former端输入文本了，而是直接从LLM的底部送入。
 
 Q-Former在 Stage 1 学好了图文互信息最大化，Stage 2突然不给文本了，这样Self Attention 的性能必然会退化。
 
-<img src="https://github.com/cnHcc06/Must-Read-Classic-AI-Papers/blob/main/LLM%E8%83%BD%E5%90%A6%E8%A7%A3%E5%86%BB%E6%8F%92%E5%9B%BE/BLIP%20-2%E9%98%B6%E6%AE%B5%E4%BA%8C.png" alt="第二阶段训练图" width="1000" load="lazy">
+<div align="center">
+  <img src="https://github.com/cnHcc06/Must-Read-Classic-AI-Papers/blob/main/LLM%E8%83%BD%E5%90%A6%E8%A7%A3%E5%86%BB%E6%8F%92%E5%9B%BE/BLIP%20-2%E9%98%B6%E6%AE%B5%E4%BA%8C.png" alt="第二阶段训练图" width="1000" load="lazy">
+</div>
 
-### 计算量的限制  
 
 这本质上是 **信息提取效率**的问题：
 
@@ -34,6 +37,8 @@ question.
 input to the Q-Former and interact with the queries via the
 self-attention layers (4.3开头)
 
+### 计算量的限制  
+
 但在**训练时**，作者还必须考虑到计算量的问题。
 
 如果Stage 2 训练时文本也从Q-Former进入，那么在生成推理时，**每生成一个 token，整个 Q-Former 必须重新跑一遍**，因为文本序列变了，自注意力和交叉注意力的输出全变了。这意味着对于一个 50 token 的回答，你要跑 50 次 Q-Former。
@@ -42,7 +47,9 @@ self-attention layers (4.3开头)
 
 值得一提的是,BLIP团队的后续工作 **InstructBLIP** 就把所有推理任务文本提示都变为两次输入，这究竟是复盘反思的结果，还是传说中的模块化研究？
 
-<img src="https://github.com/cnHcc06/Must-Read-Classic-AI-Papers/blob/main/LLM%E8%83%BD%E5%90%A6%E8%A7%A3%E5%86%BB%E6%8F%92%E5%9B%BE/BLIP-2%E6%8F%92%E5%9B%BE3.jpg" alt="毕导图（差异化）" width="400" load="lazy">
+<div align="center">
+  <img src="https://github.com/cnHcc06/Must-Read-Classic-AI-Papers/blob/main/LLM%E8%83%BD%E5%90%A6%E8%A7%A3%E5%86%BB%E6%8F%92%E5%9B%BE/BLIP-2%E6%8F%92%E5%9B%BE3.jpg" alt="毕导图（差异化）" width="400" load="lazy">
+</div>
 
 <h2 align="center"> LLM 究竟能不能解冻？ </h2>
 
@@ -53,13 +60,15 @@ BLIP最反直觉的地方，也就是它的核心贡献——它没有像Flaming
 **但从直觉上看，Q-Former输出的视觉表征这并不是LLM可以直接理解的东西。**
 
 - 如果LLM被完全冻结，那么它本质上是在理解自然语言序列，直接送入视觉表征不是强人所难吗？
-- 但如果LLM被解冻，那就更是违背原则——Q-Former就是为了减少训练参数，这一解冻就由多回去了。
+- 但如果LLM被解冻，那就更是违背原则——Q-Former 的设计初衷就是为了减少训练参数，这一解冻就白忙活了。
 
 虽然这听起来确实像是"逼一个只懂中文的人去读摩尔斯电码"，但BLIP-2的成功告诉我们，**LLM仍然可以学会，只不过学习过程会更加艰难，需要精细的训练设计**（Stage 1辅助）。
 
 原因在于LLM是在连续的词嵌入空间上处理，**Q-Former给出的视觉表征，和词嵌入向量在数学上没有本质区别**。这个高维空间中可以表示大多数自然语言的意义，如果**表示视觉意义的向量**能被低损映射到**自然语义空间**中，LLM的理解就能正常进行。
 
-<img src="https://github.com/cnHcc06/Must-Read-Classic-AI-Papers/blob/main/LLM%E8%83%BD%E5%90%A6%E8%A7%A3%E5%86%BB%E6%8F%92%E5%9B%BE/BLIP-2%E6%8F%92%E5%9B%BE4.jpg" alt="3b1b图" width="500" load="lazy">
+<div align="center">
+  <img src="https://github.com/cnHcc06/Must-Read-Classic-AI-Papers/blob/main/LLM%E8%83%BD%E5%90%A6%E8%A7%A3%E5%86%BB%E6%8F%92%E5%9B%BE/BLIP-2%E6%8F%92%E5%9B%BE4.jpg" alt="3b1b图" width="500" load="lazy">
+</div>
 
 关于 Prefix Tuning 的研究也得出同样的结果：你不需要自然语言指令，只需在 LLM 输入前加几个完全抽象的、可学习的嵌入向量，LLM 就能按你的意图完成任务。
 
@@ -90,8 +99,8 @@ BLIP最反直觉的地方，也就是它的核心贡献——它没有像Flaming
   原始：  h = W·x          （W 冻结）
   LoRA：  h = W·x + B·A·x  （B、A 低秩，可训练）
   ```
-
-  这是是最流行的做法，效果非常接近全量微调，LLaMA-Adapter、LLaVA（LoRA 版本）、mPLUG-Owl 等都验证了 LoRA 的可行性。
+  A、B 矩阵参数极少（通常只有原始权重的 0.1%~1%）  
+  这是是最流行的做法，效果非常接近全量微调。LLaMA-Adapter、LLaVA（LoRA 版本）、mPLUG-Owl 等都验证了 LoRA 的可行性。
 
 BLIP-2之前考虑灾难性遗忘、解冻LLM会让训练参数增加，但在精良的数据集和合适的策略下，灾难性遗忘是可以被解决的，训练的步数也不多，实际计算量的增加并不是很恐怖。随着硬件的升级，微调LLM的性能增益还是胜过了训练上的困难。
 
