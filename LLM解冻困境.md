@@ -6,7 +6,7 @@
 
 BLIP-2论文里有一些惑操作，例如Figure 2中 self-attention 看起来是分开的，实际是连在一起的。
 
-[问题插图对比]
+<img src="https://github.com/cnHcc06/Must-Read-Classic-AI-Papers/blob/main/LLM%E8%83%BD%E5%90%A6%E8%A7%A3%E5%86%BB%E6%8F%92%E5%9B%BE/BLIP-2%E9%97%AE%E9%A2%98%E6%8F%92%E5%9B%BE%E5%AF%B9%E6%AF%94.png" alt="第一阶段图" width="700" load="lazy">
 
 ### Q-Former 突然不给文本了？
 
@@ -16,7 +16,7 @@ BLIP-2论文里有一些惑操作，例如Figure 2中 self-attention 看起来�
 
 Q-Former在 Stage 1 学好了图文互信息最大化，Stage 2突然不给文本了，这样Self Attention 的性能必然会退化。
 
-[第二阶段训练图]
+<img src="https://github.com/cnHcc06/Must-Read-Classic-AI-Papers/blob/main/LLM%E8%83%BD%E5%90%A6%E8%A7%A3%E5%86%BB%E6%8F%92%E5%9B%BE/BLIP%20-2%E9%98%B6%E6%AE%B5%E4%BA%8C.png" alt="第二阶段训练图" width="1000" load="lazy">
 
 ### 计算量的限制  
 
@@ -42,7 +42,7 @@ self-attention layers (4.3开头)
 
 值得一提的是,BLIP团队的后续工作 **InstructBLIP** 就把所有推理任务文本提示都变为两次输入，这究竟是复盘反思的结果，还是传说中的模块化研究？
 
-[毕导图（差异化）]
+<img src="https://github.com/cnHcc06/Must-Read-Classic-AI-Papers/blob/main/LLM%E8%83%BD%E5%90%A6%E8%A7%A3%E5%86%BB%E6%8F%92%E5%9B%BE/BLIP-2%E6%8F%92%E5%9B%BE3.jpg" alt="毕导图（差异化）" width="400" load="lazy">
 
 <h2 align="center"> LLM 究竟能不能解冻？ </h2>
 
@@ -59,7 +59,7 @@ BLIP最反直觉的地方，也就是它的核心贡献——它没有像Flaming
 
 原因在于LLM是在连续的词嵌入空间上处理，**Q-Former给出的视觉表征，和词嵌入向量在数学上没有本质区别**。这个高维空间中可以表示大多数自然语言的意义，如果**表示视觉意义的向量**能被低损映射到**自然语义空间**中，LLM的理解就能正常进行。
 
-[3b1b图]
+<img src="https://github.com/cnHcc06/Must-Read-Classic-AI-Papers/blob/main/LLM%E8%83%BD%E5%90%A6%E8%A7%A3%E5%86%BB%E6%8F%92%E5%9B%BE/BLIP-2%E6%8F%92%E5%9B%BE4.jpg" alt="3b1b图" width="500" load="lazy">
 
 关于 Prefix Tuning 的研究也得出同样的结果：你不需要自然语言指令，只需在 LLM 输入前加几个完全抽象的、可学习的嵌入向量，LLM 就能按你的意图完成任务。
 
