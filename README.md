@@ -75,7 +75,7 @@ This list is arranged along the main learning thread, covering the complete evol
 | :--- | :--- | :--- | :--- |
 | 14 | [**Learning Transferable Visual Models From Natural Language Supervision (CLIP)**](https://proceedings.mlr.press/v139/radford21a) | 2021 | Vision-Language 对齐基础 |
 | 15 | [**Flamingo: a Visual Language Model for Few-Shot Learning**](https://proceedings.neurips.cc/paper_files/paper/2022/hash/960a172bc7fbf0177ccccbb411a7d800-Abstract-Conference.html) <br><details><summary>Extend Reading</summary> [从多模态到强化学习——解耦训练的哲学](https://github.com/cnHcc06/Must-Read-Classic-AI-Papers/blob/main/%E8%A7%A3%E8%80%A6%E8%AE%AD%E7%BB%83%E7%9A%84%E5%93%B2%E5%AD%A6.md) | 2022 | Few-shot 多模态模型代表 |
-| 16 | **BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models** | 2023 | Q-Former 架构经典 |
+| 16 | [**BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models**](https://proceedings.mlr.press/v202/li23q) <br><details><summary>Extend Reading</summary> [LLM的解冻困境——计算量与性能的权衡](https://github.com/cnHcc06/Must-Read-Classic-AI-Papers/blob/main/LLM%E8%A7%A3%E5%86%BB%E5%9B%B0%E5%A2%83.md) | 2023 | Q-Former 架构经典 |
 | 17 | **Visual Instruction Tuning (LLaVA)** | 2023 | 开源 Vision-Language Model 代表 |
 
 <a id="ai-agent"></a>
