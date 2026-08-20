@@ -86,7 +86,7 @@ Agent 时代的重要起点。
 
 | # | 论文名称 | 年份 | 核心贡献 |
 | :--- | :--- | :--- | :--- |
-| 18 | **ReAct: Synergizing Reasoning and Acting in Language Models** | 2022 | Reasoning + Tool Use，Agent 开山之作 |
+| 18 | [**ReAct: Synergizing Reasoning and Acting in Language Models**](https://arxiv.org/abs/2210.03629) | 2022 | Reasoning + Tool Use，Agent 开山之作 |
 | 19 | **Toolformer: Language Models Can Teach Themselves to Use Tools** | 2023 | Tool Calling 思想来源 |
 
 <a id="physical-id"></a>
